@@ -6,7 +6,7 @@ from io import BytesIO
 import base64
 from PIL import Image
 
-BOT_TOKEN = '6184173222:AAH5VU2naa5JjVL84iL-VkBPFdbWMw_zRpQ'
+BOT_TOKEN = '
 bot = AsyncTeleBot(BOT_TOKEN)
 
 async def bing_chat(prompt):
