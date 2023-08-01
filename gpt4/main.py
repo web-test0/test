@@ -24,7 +24,7 @@ async def ask(message):
             await bot.reply_to(message, "Пустой запрос")
         else:
             print(f'{message.from_user.first_name}: {prompt}')
-            sent_message = await bot.reply_to(message, "GPT-4 думает...")
+            sent_message = await bot.reply_to(message, "GPT думает...")
             bot_response = await bing_chat(prompt)
             await bot.edit_message_text(chat_id=sent_message.chat.id, message_id=sent_message.message_id, text=bot_response.replace('?\n', ''))
             print(f'BOT: {bot_response}')
